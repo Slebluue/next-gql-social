@@ -4,7 +4,7 @@ This app is designed as a take-home interview project, showcasing the use of Nex
 ## Features
 * **Styled Components**: Implemented styled-components to create a modular and reusable styling approach, simulating the functionality of a UI library.
 * **NextJS** Leveraged Next.js for server-side rendering (SSR)
-* **GraphQL** Utilized GraphQL for data fetching. You can explore the GraphQL queries and mutations at http://localhost:3000/api/graphql. This defeats some of the purpose of SSR in this use case but I opted to use it as a learning experience.
+* **GraphQL** Utilized GraphQL for data fetching. You can explore the GraphQL queries at http://localhost:3000/api/graphql. Currently this only queries on client components.
 
 ## Getting Started
 
