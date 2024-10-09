@@ -6,8 +6,6 @@ This app is designed as a take-home interview project, showcasing the use of Nex
 * **NextJS** Leveraged Next.js for server-side rendering (SSR)
 * **GraphQL** Utilized GraphQL for data fetching. You can explore the GraphQL queries and mutations at http://localhost:3000/api/graphql. This defeats some of the purpose of SSR in this use case but I opted to use it as a learning experience.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). It is a basic social app with a profile and main view where you can view posts of your friends. It uses GraphQL to mock the data presented on the page.
-
 ## Getting Started
 
 Clone the repo:
