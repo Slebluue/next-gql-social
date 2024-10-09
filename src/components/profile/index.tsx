@@ -1,7 +1,6 @@
 'use client'
 
 /** Dependency */
-import { useEffect } from 'react'
 import { useQuery, gql } from '@apollo/client' 
 import styled from 'styled-components'
 
@@ -138,11 +137,7 @@ const GET_CURRENT_USER = gql`
   }
 `
 export const CurrentProfile = () => {
-  const { data, loading, error } = useQuery(GET_CURRENT_USER)
-
-  useEffect(() => {
-    console.log(data, loading, error)
-  }, [data, loading, error])
+  const { data, loading } = useQuery(GET_CURRENT_USER)
 
   if (loading) return null
   return (
@@ -184,11 +179,7 @@ interface UserProfileProps {
   id: string
 }
 export const UserProfile = ({ id }: UserProfileProps) => {
-  const { data, loading, error } = useQuery(GET_USER, { variables: { userId: id } })
-
-  useEffect(() => {
-    console.log(data, loading, error)
-  }, [data, loading, error])
+  const { data, loading } = useQuery(GET_USER, { variables: { userId: id } })
 
   if (loading) return null
   return (
